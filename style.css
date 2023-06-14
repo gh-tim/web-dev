@@ -1,0 +1,104 @@
+* {
+    box-sizing: border-box;
+    
+}
+
+body,
+html {
+    height: 100%;
+    font-family: 'Minion Pro', serif;
+    background-size: cover;
+    object-fit: cover;
+    max-width: 100%;
+    height: auto;
+    margin: 0;
+}
+
+.hero {
+    height: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    padding: 200px 150px;
+    gap: 100px;
+    justify-content: flex-start;
+    margin-top: 70px;
+    animation-name: fadeIn;
+    animation-duration: 2s;
+}
+
+.header {
+    display: flex;
+    margin: 0;
+    justify-content: space-between;
+    padding: 20px 100px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 9999;
+    border-bottom: 2px solid #3f3d3d;
+}
+
+.footer {
+    display: flex;
+    border-top: 2px #3f3d3d solid;
+    padding: 30px 150px;
+    align-items: center;
+    justify-content: center;
+    gap: 8rem;
+}
+
+.footer-copyright {
+    display: flex;
+    font-weight: bold;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 20px;
+}
+
+.texts {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 45rem;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 24px;
+    margin-bottom: 0;
+}
+
+.main-text {
+    font-size: 48px;
+    font-weight: bold;
+    animation-name: slideInDown;
+    animation-duration: 0.75s;
+    margin-bottom: 0;
+}
+
+.sec-text {
+    display: flex;
+    padding-top: 16px;
+    font-size: 28px;
+    animation-name: slideInDown;
+    animation-duration: 0.75s;
+    margin-bottom: 0;
+}
+
+.top-links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+  
+ul {
+    list-style-type: none;
+    gap: 24px;
+    margin: 0;
+    padding: 0;
+}
+  
+a {
+    text-decoration: none;
+    font-size: 18px;
+}
