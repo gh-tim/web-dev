@@ -1,0 +1,45 @@
+colour palette hex codes 
+
+earthy green
+234336
+60A859
+9AC868
+CAF577
+E5E794
+
+earthy red
+AF2F35
+D04332
+B59A67
+D3D5AD
+F2EFCE
+
+FAF7F5
+C69786
+ECA664
+CB646B
+9A2633
+
+reddish, muted, mint
+DD3622
+EF4D23
+394140
+90C39E
+70776A
+
+red, pastel, b/w
+D5D4CF
+E87866
+C60000
+BF745E
+1A171E
+
+orange, b/w
+F4F6F5
+818282
+F47733
+DD5229
+000000
+
+
+
