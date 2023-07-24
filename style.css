@@ -97,6 +97,7 @@ html {
     justify-content: center;
 }
 
+.login-link:hover,
 .create-link:hover,
 .top-links a:hover {
     color:#eb3030;
@@ -237,11 +238,13 @@ a {
 }
 
 /*login page*/
-body#login-page {
+body#login-page,
+body#create-page {
     background-color: #ebe9e9;
 }
 
-.login {
+.login,
+.create {
     padding-top: 180px;
     padding-bottom: 180px;
     display: flex;
@@ -249,18 +252,27 @@ body#login-page {
     flex-flow: row;
 }
 
-.form-box {
+.login-form-box,
+.create-form-box {
     margin: 0;
     display: flex;
     flex-flow: column;
     padding: 100px 100px;
     border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;
-    height: 650px;
     background-color: #ffffff;
 }
 
-.login-title {
+.login-form-box {
+    height: 650px;
+}
+
+.create-form-box {
+    height: 900px;
+}
+
+.login-title,
+.create-title {
     color:#eb3030;
     font-size: 36px;
     font-weight: 800;
@@ -278,7 +290,8 @@ body#login-page {
     border-bottom-right-radius: 5px;
 }
 
-.login-button {
+.login-button,
+.signup-button {
     padding: 15px 35px;
     margin: 8px;
     border: none;
@@ -290,7 +303,8 @@ body#login-page {
     transition: color 3s ease-in-out;
   }
   
-  .login-button:hover {
+  .login-button:hover,
+  .signup-button:hover {
     background-color: #e01010;
     cursor: pointer;
   }
@@ -305,6 +319,8 @@ body#login-page {
   }
 
   .hlink,
-  .create-link {
+  .create-link,
+  .login-link {
     font-size: 14px;
+    padding-top: 30px;
   }
