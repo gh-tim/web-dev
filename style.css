@@ -36,6 +36,7 @@ html {
 
 .header {
     display: flex;
+    overflow: hidden;
     margin: 0;
     justify-content: space-between;
     padding: 20px 100px;
@@ -238,6 +239,7 @@ a {
 }
 
 /*login page*/
+body#indexfa-page,
 body#login-page,
 body#create-page {
     background-color: #ebe9e9;
@@ -252,8 +254,7 @@ body#create-page {
     flex-flow: row;
 }
 
-.login-form-box,
-.create-form-box {
+.login-form-box {
     margin: 0;
     display: flex;
     flex-flow: column;
@@ -265,10 +266,18 @@ body#create-page {
 
 .login-form-box {
     height: 650px;
+    box-shadow: 0 1px 1px #888888;
 }
 
 .create-form-box {
     height: 900px;
+    box-shadow: 0 1px 1px #888888;
+    border-radius: 5px;
+    margin: 0;
+    display: flex;
+    flex-flow: column;
+    padding: 100px 100px;
+    background-color: #ffffff;
 }
 
 .login-title,
@@ -288,6 +297,7 @@ body#create-page {
     width: 100%;
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
+    box-shadow: 0 1px 1px #888888;
 }
 
 .login-button,
@@ -324,3 +334,53 @@ body#create-page {
     font-size: 14px;
     padding-top: 30px;
   }
+
+/*admin index cards*/
+.container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    align-content: center;
+    padding-top: 180px;
+    padding-bottom: 180px;
+    gap: 50px;
+    width: 100%;
+    height: auto;
+    margin: 0;
+}
+
+.card {
+    background-color: #eb3030;
+    width: 300px;
+    height: 350px;
+    margin: 50px;
+    text-align: center;
+    box-shadow: 0 1px 1px #888888;
+}
+
+.card a {
+    background-color: #eb3030;
+    color: white;
+    padding: 15px 20px;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    margin: 20px 15px;
+}
+  
+.card:hover,
+.card a:hover { 
+    background-color: #e01010;
+    color: white;
+    cursor: pointer;
+    transform: scale(1.02);
+    transition: all 0.3s ease; 
+}
+
+.card-img {
+    height: 250px;
+    width: 200px;
+    margin-bottom: 15px;
+    background-size: cover;
+}
