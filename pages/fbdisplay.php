@@ -1,4 +1,3 @@
-<?php include ('connection.php');?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -7,6 +6,22 @@
 </head>
 <body>
         <form method="post" action="fbdisplay.php">
+        <?php
+        $db=mysqli_connect('localhost','root','','foodbank');
+
+        $search="";
+
+        if(isset($_POST['submit'])&& $_POST['submit']=="Go"){
+            $search=$_POST['search'];
+        }
+        ?>
+        <form name="fSearch" id="fSearch" action="fbdisplay.php" method="POST">
+
+        Search: <input type="text" name="search" value="<?php echo $search;?>">
+
+        <input type="submit" name="submit" value="Go">
+
+        </form>
             <div class="table">
                 <table>
                     <tr>
@@ -18,7 +33,14 @@
                         <th>Foodbank Contacts</th>
                         <th>Operations</th>
                 <?php
-                    $sql = "SELECT * FROM foodbanks";
+            
+                    if($search=="")
+            
+                        $sql = "SELECT * FROM foodbanks;";
+            
+                    else
+                        $sql="SELECT * FROM foodbanks WHERE fbName LIKE '%$search%'OR fbAddress LIKE '%$search%';";
+        
                     $result = mysqli_query($db, $sql);
                     while($row=mysqli_fetch_assoc($result))
                     {
@@ -44,5 +66,6 @@
                 ?>
             </div>
         </form>
+    <p><a href="indexfa.php">Return</a></p>
 </body>
 </html>

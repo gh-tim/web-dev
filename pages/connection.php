@@ -11,7 +11,7 @@
 	$Error=array();
 	
 	//connecting to database
-	$db=mysqli_connect('localhost','root','','sunwaybank');
+	$db=mysqli_connect('localhost','root','','foodbank');
 	
 	//when submit is clicked
 	if (isset($_POST['submit'])) {

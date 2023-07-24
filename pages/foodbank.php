@@ -1,55 +1,80 @@
-<?php include ('connection.php');?>
+<?php
+$search="";
+
+if(isset($_POST['submit'])&& $_POST['submit']=="Go"){
+	$search=$_POST['search'];
+}
+
+?>
 <!DOCTYPE html>
-<html lang="en">
+<html>
+	<body>
+	<form name="fSearch" id="fSearch" action="foodbank.php" method="POST">
 
-<head>
-    <title>hello there </title>
-	<link rel="stylesheet" type="text/css" href="style.css">
-</head>
+	Search: <input type="text" name="search" value="<?php echo $search;?>">
 
-<body>
-	<form action="foodbankk.php" method="post">
-	<header id="header" class="fixed-top d-flex align-items-cente">
-    <div class="container-fluid container-xl d-flex align-items-center justify-content-lg-between">
+	<input type="submit" name="submit" value="Go">
 
-      <h1 class="clickable brand"><a href="index.php">Restaurantly</a></h1>
+	</form>
 
-      <nav id="navbar" class="navbar">
-        <ul>
-          <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
-          <li><a class="nav-link scrollto" href="#content">About</a></li>
-          <li><a class="nav-link scrollto" href="foodbank.php">foodbank</a></li>
-          <li><a class="nav-link scrollto" href="fbform.php">Food Bank Entry</a></li>
-          <li class="dropdown"><a href="#"><span>Drop Down</span> <i class="bi bi-chevron-down"></i></a>
-            <ul>
-            	<li><a href="#">Donation</a></li>
-            	<li><a href="#">Locations</a></li>
-            </ul>
-        </ul>
-        <i class="bi bi-list mobile-nav-toggle"></i>
-      </nav>
-    </div>
-  </header>
-		<?php
-            	$sql = "SELECT * FROM foodbanks";
-				$result = mysqli_query($db, $sql);
-				while($row=mysqli_fetch_assoc($result))
-				{
-					$fbID= $row['fbID'];
-					$fbName= $row['fbName'];
-					$fbDescription= $row['fbDescription'];
-					$fbAddress= $row['fbAddress'];
-					$fbPIC= $row['fbPIC'];
-					$fbContacts= $row['fbContacts'];
-		?>
+	<?php
+	$db=mysqli_connect('localhost','root','','foodbank');
 
-		<h1><?php echo $fbName; ?></h1>
+	// Check connection
+	if (!$db) {
+
+	die("Connection failed: " . mysqli_connect_error());
+
+	}
+
+	if($search=="")
+
+		$sql = "SELECT * FROM foodbanks;";
+
+	else
+
+		$sql="select * FROM foodbanks WHERE fbName LIKE '%$search%'OR fbAddress LIKE '%$search%';";
+
+	$result = mysqli_query($db, $sql);
 
 
-		<?php
-				}
-		?>
-		
+
+	if (mysqli_num_rows($result) > 0) {
+
+	// output data of each row
+
+	while($row=mysqli_fetch_assoc($result)) {
+
+	?>
+
+	<div class="fb-box"> 
+
+	<p>
+
+	<b>Foodbank Name:<b> <?php echo $row["fbName"]?> <br>
+
+	<b>Description:<b> <?php echo $row["fbDescription"]?> <br>
+
+	<b>Foodbank Address:<b> <?php echo $row["fbAddress"]?> <br>
+
+	<b>Person-In-Charge:<b> <?php echo $row["fbPIC"]?> <br>
+
+	<b>Contacts:<b> <?php echo $row["fbContacts"]?> <br>
+
+	</div>
+
+	<?php
+	}
+
+	} else {
+	echo "0 results";
+	}
+
+	mysqli_close($db);
+	?>
+
+
+
+	<h3> <a href="index.php">Return</a></h3>
 </body>
 </html>
-

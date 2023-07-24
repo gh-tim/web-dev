@@ -38,11 +38,9 @@
                     <div><br>
                         <button type="submit" name="entry" class="button" > Submit </button>
                     </div><br>
-                    <p class="hlink"><br>
-                        Don't have an account? <a href="create.php" class="submit"> Create An Account </a>
-                    </p><br>
                 </div>
             </div>
         </form>
+    <h3><a href="indexfa.php">Return</a></h3>
 </body>
 </html>

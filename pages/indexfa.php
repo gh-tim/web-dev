@@ -26,7 +26,7 @@
           <li><a class="nav-link scrollto active" href="indexfa.php">Home</a></li>
           <li><a class="nav-link scrollto" href="fbform.php">Foodbank Entry</a></li>
           <li><a class="nav-link scrollto" href="fbdisplay.php">Foodbanks List</a></li>
-          <li><a class="nav-link scrollto" href="userdisplay.php">users List</a></li>
+          <li><a class="nav-link scrollto" href="userdisplay.php">Users List</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->

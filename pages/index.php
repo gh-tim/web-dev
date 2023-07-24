@@ -14,7 +14,7 @@
 	    <div class="header">
 		    <div class="logo">Food Bank</div>
 		    <ul class="top-links">
-                <li><a href="#">SEARCH</a></li>
+                <li><a href="foodbank">FOODBANKS</a></li>
 			    <li><a href="index.php">HOME</a></li>
                 <li><a href="login.php">REGISTER / LOGIN</a></li>
 			    <li><a href="pages/about.html">ABOUT US</a></li>
