@@ -384,3 +384,33 @@ body#create-page {
     margin-bottom: 15px;
     background-size: cover;
 }
+
+.styled-fbdisplay-table {
+    border-collapse: collapse;
+    margin: 25px 0;
+    min-width: 400px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+}
+
+.styled-fbdisplay-table thead tr {
+    background-color: #eb3030;
+    color: #ffffff;
+    text-align: left;
+}
+
+.styled-fbdisplay-table th,
+.styled-fbdisplay-table td {
+    padding: 12px 15px;
+}
+
+.styled-fbdisplay-table tbody tr {
+    border-bottom: 1px solid #dddddd;
+}
+
+.styled-fbdisplay-table tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+
+.styled-fbdisplay-table tbody tr:last-of-type {
+    border-bottom: 2px solid #eb3030;
+}

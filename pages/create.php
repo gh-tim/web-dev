@@ -37,37 +37,37 @@
 
                     <div><br>
                         <label class="alabel"></label>
-                        <input type="number" class="input-group" id="userID" name="userID" placeholder="User ID:"/>
+                        <input type="number" class="input-group" id="userID" name="userID" placeholder="User ID:" required/>
                     </div>
 
                     <div><br>
                         <label class="alabel"></label>
-                        <input type="text" class="input-group" id="userName" name="userName" placeholder="Username:"/>
+                        <input type="text" class="input-group" id="userName" name="userName" placeholder="Username:" required/>
                     </div>
 
                     <div><br>
                         <label class="alabel"></label>
-                        <input type="email" class="input-group" id="userEmail" name="userEmail" placeholder="Email:"/>
+                        <input type="email" class="input-group" id="userEmail" name="userEmail" placeholder="Email:" required/>
                     </div>
 
                     <div><br>
                         <label class="alabel"></label>
-                        <input type="number" class="input-group" id="userNumber" name="userNumber" placeholder="Telephone Number:"/>
+                        <input type="number" class="input-group" id="userNumber" name="userNumber" placeholder="Telephone Number:" required/>
                     </div>
 
                     <div><br>
                         <label class="alabel"></label>
-                        <input type="number" class="input-group" id="userICNumber" name="userICNumber" placeholder="IC Number:"/>
+                        <input type="number" class="input-group" id="userICNumber" name="userICNumber" placeholder="IC Number:" required/>
                     </div>
 
                     <div><br>
                         <label class="alabel"></label>
-                        <input type="text" class="input-group" id="userAddress" name="userAddress" placeholder="Address:"/>
+                        <input type="text" class="input-group" id="userAddress" name="userAddress" placeholder="Address:" required/>
                     </div>
 
                     <div><br>
                         <label class="alabel"></label>
-                        <input type="password" class="input-group" id="userPassword" name="userPassword" placeholder="Password:"/>
+                        <input type="password" class="input-group" id="userPassword" name="userPassword" placeholder="Password:" required/>
                     </div>
 
                     <div><br>
