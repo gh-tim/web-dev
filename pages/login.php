@@ -16,13 +16,12 @@
 
     <body id="login-page">
 	    <div class="header">
-		    <a href="../index.html" class="logo">
+		    <a href="../index.php" class="logo">
 				<img class="foodaid" src="../images/logo.png" alt="food aid foundation">
 			</a>
 		    <ul class="top-links">
-                <li><a href="#">SEARCH</a></li>
 			    <li><a href="pages/about.html">ABOUT US</a></li>
-			    <li><a href="#">COLLECTIONS</a></li>
+			    <li><a href="fdf.php">COLLECTIONS</a></li>
                 <li><a href="#">USER</a></li>
 				<li><a href="../pages/login.html" id="signuplogin">SIGN UP / LOGIN</a></li>
 		    </ul>
@@ -37,17 +36,17 @@
 
                     <div><br>
                         <label class="alabel"></label><br>
-                        <input type="text" name="userID" class="input-group" placeholder="User ID: ">
+                        <input type="text" name="userID" class="input-group" placeholder="User ID: " required>
                     </div>
 
                     <div><br>
                         <label class="alabel"></label><br>
-                        <input type="text" name="userName" class="input-group" placeholder="Username: ">
+                        <input type="text" name="userName" class="input-group" placeholder="Username: " required>
                     </div>
 
                     <div><br>
                         <label class="alabel"></label><br>
-                        <input type="password" name="userPassword" class="input-group" placeholder="Password: ">
+                        <input type="password" name="userPassword" class="input-group" placeholder="Password: " required>
                     </div>
                 
                     <div><br>

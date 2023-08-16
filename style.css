@@ -101,8 +101,7 @@ html {
 .operation-link:hover,
 .login-link:hover,
 .create-link:hover,
-.top-links a:hover,
-.return-link:hover {
+.top-links a:hover {
     color:#eb3030;
 }
   
@@ -241,12 +240,21 @@ a {
 }
 
 /*login page*/
-body#indexfa-page,
+body#userupdate-page,
 body#login-page,
-body#create-page {
+body#create-page,
+body#fbform-page,
+body#fbupdate-page,
+body#fdf-page,
+body#updateinfo-page {
     background-color: #ebe9e9;
 }
 
+.userupdate,
+.updateinfo,
+.fdf,
+.fbupdate,
+.fbform,
 .login,
 .create {
     padding-top: 180px;
@@ -264,13 +272,25 @@ body#create-page {
     border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;
     background-color: #ffffff;
-}
-
-.login-form-box {
-    height: 650px;
+	height: 650px;
     box-shadow: 0 1px 1px #888888;
 }
 
+.fbupdate-box,
+.fbform-box {
+    height: 800px;
+    box-shadow: 0 1px 1px #888888;
+    border-radius: 5px;
+    margin: 0;
+    display: flex;
+    flex-flow: column;
+    padding: 100px 100px;
+    background-color: #ffffff;
+}
+
+.userupdate-box,
+.updateinfo-box,
+.fdf-box,
 .create-form-box {
     height: 900px;
     box-shadow: 0 1px 1px #888888;
@@ -282,11 +302,25 @@ body#create-page {
     background-color: #ffffff;
 }
 
+.userupdate-title,
+.requestlist-title,
+.userdisplay-title,
+.requests-title,
+.updateinfo-title,
+.fdf-title,
+.fbupdate-title,
+.fbform-title,
 .login-title,
 .create-title {
     color:#eb3030;
     font-size: 36px;
     font-weight: 800;
+}
+
+.requests-title {
+	display:flex;
+	justify-content: center;
+	align-items: center;
 }
 
 .login-pic {
@@ -302,6 +336,8 @@ body#create-page {
     box-shadow: 0 1px 1px #888888;
 }
 
+.update-button,
+.entry-button,
 .go-button,
 .login-button,
 .signup-button {
@@ -316,6 +352,8 @@ body#create-page {
     transition: color 3s ease-in-out;
   }
   
+  .update-button:hover,
+  .entry-button:hover,
   .go-button:hover,
   .login-button:hover,
   .signup-button:hover {
@@ -332,6 +370,8 @@ body#create-page {
     border-bottom: 1px solid red;
   }
   
+  .search-requestlist,
+  .search-fdf,
   .search-fbdisplay {
 	padding: 12px 15px;
     margin: 8px 0;
@@ -397,8 +437,75 @@ body#create-page {
     background-size: cover;
 }
 
+/* Google Maps */
+.google-maps-section {
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+    padding: 80px 0; 
+    background-color: #f9f9f9;
+    overflow: hidden;
+    margin-top: 100px;
+}
+
+.google-maps-container {
+    width: 70%;
+    max-width: 1000px;
+    height: 400px;
+    display: flex;
+    border: 1px solid #ccc;
+    margin: 20px auto;
+}
+
+iframe {
+    width: 60%;
+    height: 100%;
+    border: none;
+}
+
+.map-details {
+    width: 40%;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-left: 1px solid #ccc;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start; 
+    text-align: left; 
+}
+
+.map-details h2 {
+    margin: 0;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.map-details p {
+    margin: 5px 0;
+    font-size: 16px;
+    display: flex;
+    align-items: center; 
+}
+
+.map-details p i {
+    margin-right: 10px; 
+    font-size: 18px; 
+}
+
+.food-bank-title {
+    font-size: 28px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+
 /*fbdisplay table*/
 
+.requestlist-hero,
+.userdisplay-hero,
+.fbform-hero,
 .fbdisplay-hero {
     position: relative;
     display: flex;
@@ -411,6 +518,7 @@ button .text a:hover {
 	color: red;
 }
 
+.btn-container.fdf,
 .btn-container.fbdisplay {
 	display: flex;
 	justify-content: center;
@@ -418,13 +526,13 @@ button .text a:hover {
 	padding: 0px;
 }
 
+.requestlist-box,
 .fbdisplay-box {
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	gap: 20px;
 }
-
 
 .styled-fbdisplay-table {
     border-collapse: collapse;
@@ -452,6 +560,6 @@ button .text a:hover {
     background-color: #f3f3f3;
 }
 
-.styled-fbdisplay-table tbody tr:last-of-type {
+.styled-fbdisplay-table {
     border-bottom: 2px solid #eb3030;
 }

@@ -5,7 +5,7 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	    <title>Food Aid Foundation</title>
+	    <title>Food Banks</title>
 		<link rel="icon" type="image/x-icon" href="../images/heart.png">
 	    <link rel="stylesheet" type="text/css" href="../style.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -16,13 +16,12 @@
 
     <body id="fbdisplay-page">
 	    <div class="header">
-		    <a href="../index.html" class="logo">
+		    <a href="../index.php" class="logo">
 				<img class="foodaid" src="../images/logo.png" alt="food aid foundation">
 			</a>
 		    <ul class="top-links">
-                <li><a href="#">SEARCH</a></li>
 			    <li><a href="pages/about.html">ABOUT US</a></li>
-			    <li><a href="#">COLLECTIONS</a></li>
+			    <li><a href="fdf.php">COLLECTIONS</a></li>
                 <li><a href="#">USER</a></li>
 		    </ul>
 	    </div>
@@ -50,11 +49,10 @@
 
                 <input type="submit" class="go-button" name="submit" value="Go">
 			</div>
-		</form>
 		
 			<div class="btn-container fbdisplay">
-			<button class="btn2"><a href="indexfa.php" class="return-link">Home</a></button>
-			<button class="btn2"><a href="fbform.php">Add a Foodbank</a></button>
+				<button class="btn2"><a href="fbform.php">Add a Food Bank</a></button>
+				<button class="btn2"><a href="indexfa.php" class="return-link">Home</a></button>
 			</div>
 			
 			<div class="fbdisplay-table">
@@ -103,9 +101,9 @@
 						?>
 				</table>
 			</div>
-        </form>
+			</form>
             </div>
-            </form>
+        </form>
 			
 
 		<div class="footer">

@@ -16,26 +16,25 @@
 
     <body id="indexfa-page">
 	    <div class="header">
-		    <a href="../index.html" class="logo">
+		    <a href="../index.php" class="logo">
 				<img class="foodaid" src="../images/logo.png" alt="food aid foundation">
 			</a>
 		    <ul class="top-links">
-                <li><a href="#">SEARCH</a></li>
-			    <li><a href="../pages/about.html">ABOUT US</a></li>
-			    <li><a href="#">COLLECTIONS</a></li>
+			    <li><a href="pages/about.html">ABOUT US</a></li>
+			    <li><a href="pages/fdf.php">COLLECTIONS</a></li>
                 <li><a href="#">USER</a></li>
 		    </ul>
 	    </div>
         
         <section class="container">
 			<div class="card">
-				<a href="#"><img src="../images/food3.jpg" alt="food bank" class="card-img">Food Banks</a>
+				<a href="fbdisplay.php"><img src="../images/food3.jpg" alt="food bank" class="card-img">Food Banks</a>
 			</div>
 			<div class="card">
-				<a href="#"><img src="../images/food2.jpg" alt="food donation collection" class="card-img">Food Donation Collections</a>
+				<a href="requestlist.php"><img src="../images/food2.jpg" alt="food donation collection" class="card-img">Food Donation Collections</a>
 			</div>
             <div class="card">
-				<a href="#"><img src="../images/food1.jpg" alt="member" class="card-img">Manage Users</a>
+				<a href="userdisplay.php"><img src="../images/food1.jpg" alt="member" class="card-img">Manage Users</a>
 			</div>
 		</section>
 

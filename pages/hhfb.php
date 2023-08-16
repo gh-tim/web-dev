@@ -24,6 +24,18 @@ if (mysqli_num_rows($result) > 0) {
         <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto&display=swap" rel="stylesheet">
 <head>
     <body>
+		<div class="header">
+			<a href="../index.php" class="logo">
+            <img class="foodaid" src="../images/logo.png" alt="food aid foundation">
+			</a>
+			<ul class="top-links">
+				<li><a href="pages/about.html">ABOUT US</a></li>
+				<li><a href="fdf.php">COLLECTIONS</a></li>
+				<li><a href="#">USER</a></li>
+				<li><a href="pages/login.html" id="signuplogin">SIGN UP / LOGIN</a></li>
+			</ul>
+		</div>
+	
         <div class="title-box">
             <div class="info-box">
                 <h1 class="name-head"> <?php echo $row["fbName"]?> Person-In-Charge: <?php echo $row["fbPIC"]?> </h1><br>

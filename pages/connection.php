@@ -100,6 +100,14 @@
 		}
 	}
 	
+	//when btn-name is clicked, session user will be removed/logged out and redirected to the login page
+	if (isset($_POST['btn_name'])) {
+
+	unset($_SESSION['userID']);
+	unset($_SESSION['userName']);
+	header("Location:login.php");		
+	
+	}
 
 	
 	
