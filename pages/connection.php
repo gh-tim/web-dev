@@ -14,7 +14,7 @@
 	$db=mysqli_connect('localhost','root','','foodbank');
 	
 	//when submit is clicked
-	if (isset($_POST['submit'])) {
+	if (isset($_POST['signup'])) {
 		$userID = mysqli_real_escape_string($db,$_POST['userID']);
 		$userName = mysqli_real_escape_string($db,$_POST['userName']);
 		$userEmail = mysqli_real_escape_string($db,$_POST['userEmail']);
@@ -74,17 +74,31 @@
 		$fbAddress = mysqli_real_escape_string($db,$_POST['fbAddress']);
 		$fbPIC = mysqli_real_escape_string($db,$_POST['fbPIC']);
 		$fbContacts = mysqli_real_escape_string($db,$_POST['fbContacts']);
+		$fileName = mysqli_real_escape_string($db,$_POST['fileName']);
 		if(count($Error) == 0) {
-			$sql = "INSERT INTO foodbanks ( fbID , fbName , fbDescription , fbAddress , fbPIC, fbContacts) VALUES('$fbID','$fbName','$fbDescription','$fbAddress','$fbPIC','$fbContacts')";
+			$sql = "INSERT INTO foodbanks ( fbID , fbName , fbDescription , fbAddress , fbPIC, fbContacts, fileName) VALUES('$fbID','$fbName','$fbDescription','$fbAddress','$fbPIC','$fbContacts', '$fileName')";
 			mysqli_query($db,$sql);
 			echo '<script>alert("Entry was successful")</script>';
-			header('location:index.php');//brings to index
-			
 		}	
 
 	}
 
-
+	//when submit-form-request is clicked(for foodbank help request)
+	if (isset($_POST['submit-form-request'])) {
+		if(isset($_POST['foodbank'])){
+			$foodbank = mysqli_real_escape_string($db,$_POST['foodbank']);
+			$uUserID = mysqli_real_escape_string($db,$_POST['uUserID']);
+			$description = mysqli_real_escape_string($db,$_POST['description']);
+			$pax = mysqli_real_escape_string($db,$_POST['pax']);
+			$dateRequest = mysqli_real_escape_string($db,$_POST['dateRequest']);
+		
+		if(count($Error) == 0) {
+			$sql = "INSERT INTO request ( uUserID, fFbID, pax, description, dateRequest, status) VALUES('$uUserID','$foodbank','$pax', '$description','$dateRequest','Pending')";
+			mysqli_query($db,$sql);
+			echo '<script>alert("Entry was successful")</script>';
+		}	
+		}
+	}
 	
 
 	

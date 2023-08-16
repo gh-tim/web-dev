@@ -98,9 +98,11 @@ html {
     justify-content: center;
 }
 
+.operation-link:hover,
 .login-link:hover,
 .create-link:hover,
-.top-links a:hover {
+.top-links a:hover,
+.return-link:hover {
     color:#eb3030;
 }
   
@@ -300,6 +302,7 @@ body#create-page {
     box-shadow: 0 1px 1px #888888;
 }
 
+.go-button,
 .login-button,
 .signup-button {
     padding: 15px 35px;
@@ -313,6 +316,7 @@ body#create-page {
     transition: color 3s ease-in-out;
   }
   
+  .go-button:hover,
   .login-button:hover,
   .signup-button:hover {
     background-color: #e01010;
@@ -326,6 +330,14 @@ body#create-page {
     box-sizing: border-box;
     border: none;
     border-bottom: 1px solid red;
+  }
+  
+  .search-fbdisplay {
+	padding: 12px 15px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 1px solid red; 
   }
 
   .hlink,
@@ -385,14 +397,43 @@ body#create-page {
     background-size: cover;
 }
 
-.styled-fbdisplay-table {
-    border-collapse: collapse;
-    margin: 25px 0;
-    min-width: 400px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+/*fbdisplay table*/
+
+.fbdisplay-hero {
+    position: relative;
+    display: flex;
+    padding-top: 180px;
+	padding-bottom: 40px;
+    justify-content: center;
 }
 
-.styled-fbdisplay-table thead tr {
+button .text a:hover {
+	color: red;
+}
+
+.btn-container.fbdisplay {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 0px;
+}
+
+.fbdisplay-box {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 20px;
+}
+
+
+.styled-fbdisplay-table {
+    border-collapse: collapse;
+    margin: 25px auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+	width: 80%;
+}
+
+.styled-fbdisplay-table .header-row {
     background-color: #eb3030;
     color: #ffffff;
     text-align: left;
