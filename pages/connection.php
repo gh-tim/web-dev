@@ -28,7 +28,7 @@
 			mysqli_query($db,$sql);
 			$_SESSION['userName'] = $userName;
 			$_SESSION['userID'] = $userID;
-            header('location:index.php');//brings to index
+            header('location:../userindex.php');//brings to index
 			
 		}		
 	}
@@ -54,7 +54,7 @@
 				$_SESSION['userName'] = $userName;
 				$_SESSION['userPassword'] = $userPassword;
 				if ($row['role'] == 'user'){
-					header('location:index.php');//brings to index
+					header('location:../index.php');//brings to index
 				}
 				elseif($row['role'] == 'admin'){
 					header('location:indexfa.php');//brings to index
@@ -100,8 +100,8 @@
 		}
 	}
 	
-	//when btn-name is clicked, session user will be removed/logged out and redirected to the login page
-	if (isset($_POST['btn_name'])) {
+	//when logout-button is clicked, session user will be removed/logged out and redirected to the login page
+	if (isset($_POST['logout-button'])) {
 
 	unset($_SESSION['userID']);
 	unset($_SESSION['userName']);

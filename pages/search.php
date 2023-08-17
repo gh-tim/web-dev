@@ -41,20 +41,6 @@ if (mysqli_num_rows($result) > 0) {
 
 ?>
 
-  <p> 
-
-  ID: <?php echo $row["fbID"]?> <br>
-
-  Name: <?php echo $row["fbName"]?> <br>
-
-  Description: <?php echo $row["fbDescription"]?> <br>
-
-  Address: <?php echo $row["Address"]?> <br>
-
-  Action: <a href="lab6.5.php?id=<?php echo $row["id"]?>">edit</a> 
-
-  <a href="lab6.6.php?id=<?php echo $row["id"]?>">delete</a> <br>
-
 <?php
 
  }
@@ -68,7 +54,3 @@ if (mysqli_num_rows($result) > 0) {
 mysqli_close($conn);
 
 ?>
-
-
-
-<h3> <a href="lab6.2.php">Add</a></h3>

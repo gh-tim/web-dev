@@ -49,13 +49,14 @@
 	
 	<body id="userupdate-page">
 		<div class="header">
-            <a href="../index.php" class="logo">
+            <a href="indexfa.php" class="logo">
                 <img class="foodaid" src="../images/logo.png" alt="food aid foundation">
             </a>
             <ul class="top-links">
-                <li><a href="pages/about.html">ABOUT US</a></li>
+                <li><a href="about.php">ABOUT US</a></li>
                 <li><a href="fdf.php">COLLECTIONS</a></li>
-                <li><a href="#">USER</a></li>
+				<li><a href="usersearch.php">FOOD BANKS</a></li>
+				<li><a href="login.php" class="logout-button">LOG OUT</a></li>	
             </ul>
         </div>
 	

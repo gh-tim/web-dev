@@ -290,7 +290,6 @@ body#updateinfo-page {
 
 .userupdate-box,
 .updateinfo-box,
-.fdf-box,
 .create-form-box {
     height: 900px;
     box-shadow: 0 1px 1px #888888;
@@ -302,6 +301,19 @@ body#updateinfo-page {
     background-color: #ffffff;
 }
 
+.fdf-box {
+    height: 1000px;
+    box-shadow: 0 1px 1px #888888;
+    border-radius: 5px;
+    margin: 0;
+    display: flex;
+    flex-flow: column;
+    padding: 100px 100px;
+    background-color: #ffffff;
+}
+
+.usersearch-title,
+.about-title,
 .userupdate-title,
 .requestlist-title,
 .userdisplay-title,
@@ -370,6 +382,7 @@ body#updateinfo-page {
     border-bottom: 1px solid red;
   }
   
+  .search-usersearch,
   .search-requestlist,
   .search-fdf,
   .search-fbdisplay {
@@ -444,7 +457,6 @@ body#updateinfo-page {
     justify-content: center;
     align-items: center;
     padding: 80px 0; 
-    background-color: #f9f9f9;
     overflow: hidden;
     margin-top: 100px;
 }
@@ -465,7 +477,7 @@ iframe {
 }
 
 .map-details {
-    width: 40%;
+    width: 400px;
     padding: 20px;
     background-color: rgba(255, 255, 255, 0.9);
     border-left: 1px solid #ccc;
@@ -495,14 +507,18 @@ iframe {
 }
 
 .food-bank-title {
-    font-size: 28px;
+    font-size: 34px;
     margin-bottom: 20px;
     text-align: center;
+	color:#ffffff;
+	text-shadow: 3px 3px #000000;
 }
 
 
 /*fbdisplay table*/
 
+.usersearch-hero,
+.about-hero,
 .requestlist-hero,
 .userdisplay-hero,
 .fbform-hero,
@@ -526,6 +542,7 @@ button .text a:hover {
 	padding: 0px;
 }
 
+.usersearch-box,
 .requestlist-box,
 .fbdisplay-box {
 	display: flex;
@@ -563,3 +580,116 @@ button .text a:hover {
 .styled-fbdisplay-table {
     border-bottom: 2px solid #eb3030;
 }
+
+/*about us page*/
+.about-content {
+    display: flex;
+    margin: 120px 200px;
+    gap: 50px;
+}
+
+.about-texts {
+    display: flex;
+    flex-shrink: 1;
+	border: 1px solid #000000;  
+    flex-direction: column;
+    padding: 20px 40px;
+}
+
+.about-main {
+    color: #eb3030;
+	font-size: 36px;
+}
+
+.pic-group,
+.about-sec {
+    padding-bottom: 80px;
+    font-size: 18px;
+    line-height: 35px;
+}
+
+.pic-group img {
+    display: flex;
+    flex: auto;
+    width: 650px;
+    height: 400px;
+    border-radius: 5px;
+}
+
+.pic-group {
+    align-self: center;
+}   
+
+.foodbank-container {
+	background-image: url(images/soup.jpg);
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: center;
+	align-content: center;
+    padding-bottom: 180px;
+    gap: 20px;
+    height: auto;
+    margin: 0;
+}
+
+.foodbank-card {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	background-color: #eb3030;
+	padding-top: 50px;
+	padding-left: 50px;
+	padding-right: 50px;
+	width: 450px;
+    height: 300px;
+    margin: 50px;
+    box-shadow: 0 1px 1px #888888;
+}
+
+.foodbank-card button {
+	border: none;
+	background-color: transparent; 
+	text-decoration: underline;
+}
+
+.bg-pic{
+    display: flex;
+    image-resolution: 100%;
+    justify-content: center;
+    width: auto;
+    background-image: url(images/apfb.jpg);
+}
+
+.bg-pic-djh{
+    display: flex;
+    image-resolution: 100%;
+    justify-content: center;
+    width: auto;
+    background-image: url(images/djh.jpg);
+}
+
+.bg-pic-sfb{
+    display: flex;
+    image-resolution: 100%;
+    justify-content: center;
+    width: auto;
+    background-image: url(images/sfb.jpg);
+}
+
+.bg-pic-sfm{
+    display: flex;
+    image-resolution: 100%;
+    justify-content: center;
+    width: auto;
+    background-image: url(images/sfm.jpg);
+}
+
+.bg-pic-sjfb{
+    display: flex;
+    image-resolution: 100%;
+    justify-content: center;
+    width: auto;
+    background-image: url(images/sjfb.jpg);
+}
+

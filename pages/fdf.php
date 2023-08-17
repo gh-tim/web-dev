@@ -14,13 +14,14 @@
     
 	<body id="fdf-page">
 		<div class="header">
-		    <a href="../index.php" class="logo">
+		    <a href="userindex.php" class="logo">
 				<img class="foodaid" src="../images/logo.png" alt="food aid foundation">
 			</a>
 		    <ul class="top-links">
-			    <li><a href="pages/about.html">ABOUT US</a></li>
+			    <li><a href="about.php">ABOUT US</a></li>
 			    <li><a href="fdf.php">COLLECTIONS</a></li>
-                <li><a href="#">USER</a></li>
+				<li><a href="usersearch.php">FOOD BANKS</a></li>
+				<li><a href="login.php" class="logout-button">LOG OUT</a></li>	
 		    </ul>
 	    </div>
 		
@@ -33,7 +34,7 @@
 
                     <div><br>
                         <label class="alabel"></label><br>
-                        <input type="text" name="uUserID" class="input-group" placeholder="User ID: " required>
+                        <input type="text" name="uUserID" class="input-group" placeholder="User ID: ">
                     </div><br>
 
                     <div><br>
@@ -61,12 +62,12 @@
                     
                     <div><br>
                         <label class="alabel"></label><br>
-                        <input type="number" name="pax" class="input-group" placeholder="Pax:" required>
+                        <input type="number" name="pax" class="input-group" placeholder="Pax:">
                     </div>
 
                     <div><br>
                         <label class="alabel"></label><br>
-                        <input type="datetime-local" name="dateRequest" class="input-group" placeholder="Date: " required>
+                        <input type="datetime-local" name="dateRequest" class="input-group" placeholder="Date: ">
                     </div>
 
                     <div><br>

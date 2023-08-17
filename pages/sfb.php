@@ -29,17 +29,18 @@ if (mysqli_num_rows($result) > 0) {
 
 <body>
     <div class="header">
-        <a href="../index.php" class="logo">
+        <a href="userindex.php" class="logo">
             <img class="foodaid" src="/images/logo.png" alt="food aid foundation">
         </a>
         <ul class="top-links">
-            <li><a href="pages/about.html">ABOUT US</a></li>
+            <li><a href="about.php">ABOUT US</a></li>
             <li><a href="fdf.php">COLLECTIONS</a></li>
-            <li><a href="#">USER</a></li>
-            <li><a href="pages/login.html" id="signuplogin">SIGN UP / LOGIN</a></li>
+			<li><a href="usersearch.php">FOOD BANKS</a></li>
+			<li><a href="login.php" class="logout-button">LOG OUT</a></li>	
         </ul>
     </div>
 
+<div class="bg-pic-sfb">
 <div class="google-maps-section">
     <h1 class="food-bank-title">Sunshine Food Bank</h1>
     <div class="google-maps-container">
@@ -52,9 +53,10 @@ if (mysqli_num_rows($result) > 0) {
             <h2>Details</h2>
             <p><i class="fa fa-map-marker" aria-hidden="true"></i> Location: Kelantan</p>
             <p><i class="fa fa-user" aria-hidden="true"></i> Person-In-Charge: Charlotte Pudding</p>
-            <p><i class="fa fa-envelope" aria-hidden="true"></i> Contact: sunshinefb@gmail.com</p>
+            <p><i class="fa fa-envelope" aria-hidden="true"></i><a href="mailto:sunshinefb@gmail.com">Contact: sunshinefb@gmail.com</a></p>
         </div>
     </div>
+</div>
 </div>
 
 <div class="footer">
